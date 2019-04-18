@@ -1,6 +1,12 @@
 import React, { Component } from "react";
+import { HashRouter as Router, Route } from "react-router-dom";
 
 import Header from "./Header";
+import Footer from "./Footer";
+import ShopSelected from "./ShopSelected";
+import GallerySelected from "./GallerySelected";
+import About from "./About";
+
 class App extends Component {
   constructor(props) {
     super(props);
@@ -8,9 +14,15 @@ class App extends Component {
   }
   render() {
     return (
-      <React.Fragment>
-        <Header />
-      </React.Fragment>
+      <Router>
+        <Route path="/" component={Header} />
+        <Route path="/" component={Footer} />
+        <div className="content">
+          {/* <Route exact path="/" component={ShopSelected} />
+          <Route exact path="/" component={GallerySelected} />
+          <Route exact path="/" component={About} /> */}
+        </div>
+      </Router>
     );
   }
 }

@@ -7,6 +7,10 @@ class Header extends Component {
     super(props);
     this.state = {};
   }
+
+  home() {
+    
+  }
   render() {
     return (
       <div className="header">
