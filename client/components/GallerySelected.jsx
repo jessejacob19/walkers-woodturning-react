@@ -8,7 +8,7 @@ class GallerySelected extends Component {
   render() { 
     return (
       <React.Fragment>
-        
+        <p>GallerySelected here</p>
       </React.Fragment>
     );
   }

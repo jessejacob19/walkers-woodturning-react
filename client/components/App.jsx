@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
 
 import Header from "./Header";
+import NavBar from "./NavBar";
 import Footer from "./Footer";
 import ShopSelected from "./ShopSelected";
 import GallerySelected from "./GallerySelected";
@@ -16,11 +17,12 @@ class App extends Component {
     return (
       <Router>
         <Route path="/" component={Header} />
+        <Route path="/" component={NavBar} />
         <Route path="/" component={Footer} />
         <div className="content">
-          {/* <Route exact path="/" component={ShopSelected} />
+          <Route exact path="/" component={ShopSelected} />
           <Route exact path="/" component={GallerySelected} />
-          <Route exact path="/" component={About} /> */}
+          <Route exact path="/" component={About} />
         </div>
       </Router>
     );
