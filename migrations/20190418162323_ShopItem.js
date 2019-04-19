@@ -13,6 +13,7 @@ exports.up = function(knex, Promise) {
     table.integer("price");
     table.string("description");
     table.string("imgLink");
+    table.string("woodType")
     table.integer("amountLeft");
   });
 };
