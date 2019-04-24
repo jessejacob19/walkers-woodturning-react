@@ -1,16 +1,16 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import { HashRouter as Router, Route } from "react-router-dom";
-
-import Header from "./Header";
-import NavBar from "./NavBar";
-import Footer from "./Footer";
-import ShopSelected from "./ShopSelected";
-import GallerySelected from "./GallerySelected";
-import About from "./About";
-import Demonstrations from "./Demonstrations";
-import Courses from "./Courses";
-import Contact from "./Contact";
-import Links from "./links";
+import Header from "./static/Header";
+import NavBar from "./static/NavBar";
+import Footer from "./static/Footer";
+import ShopSelected from "./shop/ShopSelected";
+import GallerySelected from "./gallery/GallerySelected";
+import About from "./static/About";
+import Demonstrations from "./static/Demonstrations";
+import Courses from "./static/Courses";
+import Contact from "./static/Contact";
+import Links from "./static/links";
+import Loading from './static/LoadingBar'
 
 class App extends Component {
   constructor(props) {
@@ -21,6 +21,7 @@ class App extends Component {
   }
   render() {
     return (
+      <Fragment>
       <Router>
         <Route path="/" component={Header} />
         <Route path="/" component={NavBar} />
@@ -52,6 +53,8 @@ class App extends Component {
         </div>
         <Route path="/" component={Footer} />
       </Router>
+      {/* {this.state.Loading && <LoadingBar/>} */}
+      </Fragment>
     );
   }
 }
