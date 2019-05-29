@@ -1,3 +1,31 @@
+This is a new take on the walkerswoodturning.co.nz website waiting on a meeting to decide scope of the project.
+
+It could either be a change to their existing wix website or a full remake implementing an ordering system for them.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # A starter webpack project for React
 
 This is a starter project that uses webpack to transpile and bundle ES6 React code. To use, consider these steps:
